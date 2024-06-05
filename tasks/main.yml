@@ -40,3 +40,9 @@
 
 - name: "Include tasks for Cargo"
   include_tasks: cargo.yml
+
+- name: "Clone Rust Book files"
+  git:
+    repo: 'https://github.com/dooraim/rust-book.git'
+    version: master
+    dest: '~{{ username }}/rust-lang-book'
