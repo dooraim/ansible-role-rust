@@ -44,5 +44,5 @@
 - name: "Clone Rust Book files"
   git:
     repo: 'https://github.com/dooraim/rust-book.git'
-    version: master
+    version: main
     dest: '~{{ username }}/rust-lang-book'
